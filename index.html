@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title class="title">Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/global.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/index.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/dark-light-index.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <div class="nav-left"><a href="#">Where in the world?</a></div>
+          <div class="nav-right">
+            <div class="dark-light">
+              <div class="dark-mode mode-hide">
+                <img src="assets/dark.svg" alt="dark-icon" />
+                <span>Dark mode</span>
+              </div>
+              <div class="light-mode">
+                <img src="assets/light.png" alt="light-icon" />
+                <span>Light mode</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="input-row">
+          <div class="search">
+            <img
+              src="assets/search.svg"
+              class="search-icon"
+              alt="search-icon"
+            />
+            <input
+              type="search"
+              name="search-country"
+              class="search-input"
+              placeholder="Search for a country…"
+            />
+          </div>
+
+          <div class="select-regions">
+            <select name="region-select" class="region-select">
+              <option value="filter" class="filter">Filter by region</option>
+              <option class="region" value="euro">Europe</option>
+              <option class="region" value="asia">Asia</option>
+              <option class="region" value="sth-america">South America</option>
+              <option class="region" value="nth-america">North America</option>
+              <option class="region" value="africa">Africa</option>
+            </select>
+          </div>
+        </div>
+        <div class="countries-row"></div>
+      </div>
+
+      <!-- pagination -->
+
+      <ul class="pagination"></ul>
+
+      <!-- pagination end -->
+
+      
+    </main>
+    <footer>
+      <div class="container footer-content">
+        <div class="pagination-buttons">
+          <button class="pgn-button prev-button">Previous</button
+          ><button class="pgn-button page-button">1</button
+          ><button class="pgn-button next-button">Next</button>
+        </div>
+      </div>
+    </footer>
+    <script src="js/dark-light.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
